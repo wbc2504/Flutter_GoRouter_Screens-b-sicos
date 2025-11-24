@@ -1,5 +1,5 @@
-import '../../domain/entities/expense.dart';
-import '../../domain/repositories/expense_repository.dart';
+import '../../../domain/entities/expense.dart';
+import '../../../domain/repositories/expense_repository.dart';
 
 //Como no contamos con base de datos para este proyecto utilizamos memoria
 
@@ -18,3 +18,4 @@ class ExpenseRepositoryInMemory implements ExpenseRepository { // implementa la 
     _storage.add(expense);   // Agraga un gasto recibido en memoria
   }
 }
+
