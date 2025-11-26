@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:provider/provider.dart';
-import 'package:uuid/uuid.dart';
+import 'package:provider/provider.dart'; // para inyeccion de dependencias desde widgets
+import 'package:uuid/uuid.dart'; // Generar identificadores unicos por gasto
 
 import '../../../../../domain/entities/expense.dart';
 import '../../../../../domain/usecases/add_expense.dart';
 import '../../../../../main.dart';
 import '../widgets/app_drawer.dart';
 
-class AddExpensePage extends StatefulWidget {
-  const AddExpensePage({super.key});
+class AddExpensePage extends StatefulWidget {  //Pagina con estado 
+  const AddExpensePage({super.key}); //constructor
 
   @override
   State<AddExpensePage> createState() => _AddExpensePageState();
@@ -83,8 +83,8 @@ class _AddExpensePageState extends State<AddExpensePage> {
                   )
                 ],
               ),
-              
-              SizedBox(height: 20),
+
+              SizedBox(height: 20), //  SizedBox para que el boton quede debajo del selector fecha
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue,   // color de fondo

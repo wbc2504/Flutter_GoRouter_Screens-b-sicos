@@ -11,6 +11,6 @@ class Expense {
     required this.description,
     required this.category,
     required this.amount,
-    required this.date,
+    required this.date, // fecha
   });
 }

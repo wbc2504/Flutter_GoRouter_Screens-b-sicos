@@ -15,7 +15,7 @@ class ExpenseRepositoryInMemory implements ExpenseRepository { // implementa la 
   @override
   Future<void> addExpense(Expense expense) async {
     await Future.delayed(const Duration(milliseconds: 150));
-    _storage.add(expense);   // Agraga un gasto recibido en memoria
+    _storage.add(expense);   // Agrega un gasto recibido en memoria
   }
 }
 
