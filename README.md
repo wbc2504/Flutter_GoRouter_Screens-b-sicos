@@ -43,3 +43,29 @@ domain/, data/, features/, app/
 * provider
 * uuid
 * Clean Architecture
+
+Verifica la instalación:
+
+```
+flutter doctor
+```
+
+# 🚀 Cómo ejecutar la aplicación
+# 1️⃣ Clona el repositorio
+```
+  git clone https://github.com/wbc2504/Flutter_GoRouter_Screens-b-sicos.git
+  cd my_personal_expenses
+```
+
+2️⃣ Instala las dependencias
+```
+flutter pub get
+```
+
+3️⃣ Ejecuta la aplicación
+
+En emulador o dispositivo conectado:
+
+```
+flutter run
+```
