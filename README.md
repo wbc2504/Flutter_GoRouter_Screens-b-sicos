@@ -57,15 +57,30 @@ flutter doctor
   cd my_personal_expenses
 ```
 
-2️⃣ Instala las dependencias
+# 2️⃣ Instala las dependencias
 ```
 flutter pub get
 ```
 
-3️⃣ Ejecuta la aplicación
+# 3️⃣ Ejecuta la aplicación
 
 En emulador o dispositivo conectado:
 
 ```
 flutter run
 ```
+
+# 🧪 Cómo probar la aplicación
+
+ 1. Abra la app
+ 2. Navegue a Agregar Gasto
+ 3. Ingrese datos válidos
+ 4. Pulse Guardar
+ 5. Regrese al listado y confirme que aparece
+ 6. Abra el menú lateral y vaya a Estadísticas
+ 7. Verifique que la tabla refleja los cambios
+Puedes agregar 2–3 gastos para validar todas las estadísticas.
+
+## Autores ✒️
+
+**William Beltran** - *Desarrollo y documentaciòn* - [wbc2504](https://github.com/wbc2504)
