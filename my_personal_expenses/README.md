@@ -26,26 +26,21 @@ La aplicación permite:
 
  # 📱 Características principales
 
-✔ Formulario para agregar gastos (descripción, monto, categoría, fecha)
-✔ Listado de gastos con diseño limpio
-✔ Navegación en toda la app con go_router
-✔ Menú lateral (Drawer)
-✔ Estadísticas en formato de tabla (DataTable)
-✔ Arquitectura limpia separada en:
+* Formulario para agregar gastos (descripción, monto, categoría, fecha)
+* Listado de gastos con diseño limpio
+* Navegación en toda la app con go_router
+* Menú lateral (Drawer)
+* Estadísticas en formato de tabla (DataTable)
+* Arquitectura limpia separada en:
 domain/, data/, features/, app/
-✔ Repositorio en memoria para simular almacenamiento
-✔ Código organizado y escalable
+* Repositorio en memoria para simular almacenamiento
+* Código organizado y escalable
 
 # 🧰 Tecnologías usadas
 
 * Flutter 3.x
-
 * Dart 3.x
-
 * go_router
-
 * provider
-
 * uuid
-
 * Clean Architecture
