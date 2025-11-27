@@ -7,15 +7,15 @@ final GoRouter appRouter = GoRouter(
   routes: [
     GoRoute(
       path: '/',
-      builder: (_, __) => const ExpensesListPage(),
+      builder: (_, __) => const ExpensesListPage(), //Lista de gastos
     ),
     GoRoute(
       path: '/add',
-      builder: (_, __) => const AddExpensePage(),
+      builder: (_, __) => const AddExpensePage(), // añadir unn gasto
     ),
     GoRoute(
       path: '/stats',
-      builder: (_, __) => const StatsPage(),
+      builder: (_, __) => const StatsPage(),  // Estadisticas
     ),
   ],
 );
