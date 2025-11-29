@@ -16,11 +16,11 @@ class AddExpensePage extends StatefulWidget {  //Pagina con estado
 }
 
 class _AddExpensePageState extends State<AddExpensePage> {
-  final _formKey = GlobalKey<FormState>();
-  final descCtrl = TextEditingController();
+  final _formKey = GlobalKey<FormState>(); // variable para validacion del formulario
+  final descCtrl = TextEditingController(); //
   final amountCtrl = TextEditingController();
 
-  String category = 'Varios';
+  String category = 'Varios';         //inicializacion de category y date 
   DateTime date = DateTime.now();
 
   @override
@@ -36,13 +36,13 @@ class _AddExpensePageState extends State<AddExpensePage> {
           key: _formKey,
           child: Column(
             children: [
-              TextFormField(
+              TextFormField(       // ingresando texto descripcion gasto
                 controller: descCtrl,
                 decoration: const InputDecoration(labelText: 'Descripción'),
                 validator: (value) =>
                     value == null || value.isEmpty ? 'Ingrese una descripción' : null,
               ),
-              TextFormField(
+              TextFormField(              // ingresando texto monto del gasto
                 controller: amountCtrl,
                 decoration: const InputDecoration(labelText: 'Monto'),
                 keyboardType: TextInputType.number,
@@ -51,7 +51,7 @@ class _AddExpensePageState extends State<AddExpensePage> {
                   return (n == null || n <= 0) ? 'Monto inválido' : null;
                 },
               ),
-              DropdownButtonFormField<String>(
+              DropdownButtonFormField<String>(       // seleccionar de la lista la categoria del gasto
                 value: category,
                 decoration: const InputDecoration(labelText: 'Categoría'),
                 items: const [
@@ -93,7 +93,7 @@ class _AddExpensePageState extends State<AddExpensePage> {
                 onPressed: () async {
                   if (!_formKey.currentState!.validate()) return;
 
-                  final expense = Expense(
+                  final expense = Expense(   // registro del gasto  
                     id: const Uuid().v4(),
                     description: descCtrl.text,
                     category: category,
@@ -103,9 +103,9 @@ class _AddExpensePageState extends State<AddExpensePage> {
 
                   await repo.addExpense(expense);
 
-                  context.go('/');
+                  context.go('/');    // Navegar al home
                 },
-                child: const Text('Guardar'),
+                child: const Text('Guardar'), //guardar gasto
               )
             ],
           ),
